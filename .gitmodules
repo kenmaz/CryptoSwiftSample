@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/CryptoSwift"]
+	path = Carthage/Checkouts/CryptoSwift
+	url = ssh://git@github.com/krzyzanowskim/CryptoSwift.git
