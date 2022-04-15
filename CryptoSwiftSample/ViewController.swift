@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class ViewController: UIViewController {
 
