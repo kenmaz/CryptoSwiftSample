@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A8C9CB12809381B001CFDEA /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C9CB02809381B001CFDEA /* CryptoSwift.framework */; };
+		8A8C9CB22809381B001CFDEA /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C9CB02809381B001CFDEA /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AF7C8F2280916BB00425E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7C8F1280916BB00425E2B /* AppDelegate.swift */; };
 		8AF7C8F4280916BB00425E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7C8F3280916BB00425E2B /* SceneDelegate.swift */; };
 		8AF7C8F6280916BB00425E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7C8F5280916BB00425E2B /* ViewController.swift */; };
@@ -15,7 +17,22 @@
 		8AF7C8FE280916BD00425E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7C8FC280916BD00425E2B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8A8C9CAF28093810001CFDEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A8C9CB22809381B001CFDEA /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8A8C9CB02809381B001CFDEA /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF7C8EE280916BB00425E2B /* CryptoSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF7C8F1280916BB00425E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF7C8F3280916BB00425E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8C9CB12809381B001CFDEA /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				8AF7C8F0280916BB00425E2B /* CryptoSwiftSample */,
 				8AF7C8EF280916BB00425E2B /* Products */,
+				8AF7C9052809188E00425E2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = CryptoSwiftSample;
 			sourceTree = "<group>";
 		};
+		8AF7C9052809188E00425E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A8C9CB02809381B001CFDEA /* CryptoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				8AF7C8EA280916BB00425E2B /* Sources */,
 				8AF7C8EB280916BB00425E2B /* Frameworks */,
 				8AF7C8EC280916BB00425E2B /* Resources */,
+				8A8C9CAF28093810001CFDEA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
